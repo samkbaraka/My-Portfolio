@@ -8,21 +8,30 @@
       <title>Samuel Baraka Portfolio</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="">HOME</a>
-                <a href="">ABOUT</a>
-                <a href="">RESUME</a>
-                <a href="">WORKS</a>
-                <a href="">CONTACTS</a>
+        <header class="HEADER">
+            <nav class="NAVBAR">
+                <a href="#" id="home">HOME</a>
+                <a href="#" id="about">ABOUT</a>
+                <a href="#" id="resume">RESUME</a>
+                <a href="#" id="contact">CONTACT</a>
             </nav>
         </header>
 
-        <section class="HOME">
+        <section class="HOME" id="HOME">
+            
+            
          <div class="HOMECONTENT">
-            <h1>I'm Samuel Baraka </h1>
-            <p>A dedicated and enthusiastic web developer with a keen eye for detail and a passion for crafting seamless and visually appealing websites.</p>
-            <hr>
+            <img src="Image1.png" alt="Baraka Image">
+                
+            <h1>Hi! I'm <span>Samuel Baraka</span> </h1>
+            <div class="ANIMATE">
+                <h3>Frontend Developer</h3>
+            </div>
+            <p>A dedicated and enthusiastic web developer with a keen eye for detail and a passion for crafting seamless and visually appealing websites. My expertise lies in  HTML, CSS, JavaScript, allowing me to create dynamic and responsive web applications. <br>Lets do it!</p>
+            <div class="RULER">
+                <hr>
+            </div>
+            
 
             <div class="ICONS">
                 <a href="https://www.facebook.com/profile.php?id=100070073097093">
@@ -46,8 +55,61 @@
                 </a>
                 
             </div>
+
+            
          </div>
         </section>
+        <section class="ABOUT" id="ABOUT">
+            <img src="Baraka.jpg" alt="Baraka Image">
+            <div class="DESCRIPTION">
+                <h1>ABOUT ME</h1>
+                <Br></Br>
+                <p>I'm Proficient in HTML, CSS and Javascript.I am dedicated to the world of web development and programming, with a particular focus on creating efficient and innovative solutions using the languages and tools I'm proficient in. In this Portfolio, you can expect to find a collection of my projects and contributions related to my programming interests. Whether its web development projects, or other exciting endeavors, you'll find a diverse range of content that reflects my passion for programming and innovation. Feel free to explore, collaborate, and reach out if you have any questions or want to discuss ideas related to the fascinating worlds of web development or the exciting possibilities the future holds.</p>
+            </div> 
+        </section>
+
+        <section class="RESUME" id="RESUME">
+            <div class="HEADING">
+                <h1>Education</h1>
+            </div>
+            <article class="RESUMECONTENT">
+                <div>
+                    <h1>Power Learn Project Africa</h1><br>
+                    <p>Enrolled in the Power Learn Project Africa, a dynamic and comprehensive software development training program. Acquiring in-depth knowledge and practical skills in various programming languages, software development methodologies, and industry best practices. </p>
+                    <br>
+
+                    <h1>Serein Educational Institute</h1><br>
+                    <p>Certificate, Psychological counselling -Award certificate of completion, Grade-Credit</p>
+                </div>
+
+            </article>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+    
+            <form action="#" method="post" class="contact-form">
+                <div class="input-box">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your Full Name" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="input-box">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Your Mobile Number" required>
+                </div>
+                <div class="input-box">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Write your message here" required></textarea>
+                </div>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <script src="script.js"></script>
+    
 
 
     </body>

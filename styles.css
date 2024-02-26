@@ -1,30 +1,77 @@
 *{
     margin: 0;
-}
- a{
-    color: white;
-    margin:20px;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
- }
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
 
-header{
-    text-align: right;
-    color: white;
-    background-color: black;
-    padding: 25px;
+
 }
+:root{
+    --bg-color: #101541;
+    --second-bg-color:#3facf5;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background: var(--bg-color);
+   color: var(--text-color);
+}
+ 
+
+.HEADER{
+   position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
+    justify-content: center;
+    background: linear-gradient(90deg,rgb(2,0,36,1)0%,rgb(9,9,121,1)35%,rgb(7,106,126)100%);
+    width: 100%;
+    height: 60px;
+    margin: 0cm;
+    color: var(--text-color);
+}
+
+.NAVBAR a{
+   font-size: 1.7rem;
+   color:var(--text-color);
+   font-weight: 500;
+   margin-left: 3.5rem;
+   transition: 3s;
+}
+
+.NAVBAR a:hover{
+   color: var(--main-color);
+
+}
+ section{
+   min-height: 100vh;
+   padding: 6rem 9% 2rem;
+ }
 
 
 .HOME .HOMECONTENT{
-   /* background-image: ;*/
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
-    background-color: orange;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
 }
 
@@ -37,46 +84,155 @@ header{
     font-size: 20px;
     
 }
- hr{
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 40%;
-    border-color: black;
-    margin-bottom: 20px;
-
- }
- .HOME >hr{
-    column-rule-color: black;
-    
- }
+ .HOMECONTENT .RULER{
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 50%;
+      margin-bottom: 20px;
+      border-color: white; 
+      border-width: 1px;
+      border-style: solid;
+  }
+ 
 
 
-
- .HOMECONTENT .ICONS a:hover{
-    background: var(--main-color);
-    color: var(--white-color);
+ .HOMECONTENT .ANIMATE{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .5px var(--main-color);
 
  }
 
  .HOMECONTENT .ICONS> a{
-    height:25px ;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     background: transparent;
-    border:black solid;
-    color: black;
-    align-items: center;
-    justify-content: center;
+    border: 2px solid white; 
+    color: var(--text-color);
+    text-align: center;
+    line-height: 25px;
     margin: 4px;
     display: inline-block;
     font-size: 20px;
     background-repeat: no-repeat;
     background-size: cover;
-    
  }
-
-
-
-
-
+ .HOMECONTENT img {
+   width: 150px; 
+   height: 150px;
+   overflow: hidden;
+   border-radius: 50%;
+   border: 4px solid transparent;
+   animation: borderAnimation 3s infinite linear; 
+   align-items: center;
+   margin:0 auto;
+   justify-content: center;
+}
+.ABOUT img{
+   width: 150px; 
+   height: 150px;
+   overflow: hidden;
+   border-radius: 50%;
+   border: 4px solid transparent;
+   animation: borderAnimation 3s infinite linear; 
+   align-items: center;
+   margin:0 auto;
+   justify-content: center;
+   display: flex;
    
+}
+
+.DESCRIPTION{
+   /*background: var(--bg-color);*/
+   padding:5px;
+   border-radius: 1rem;
+   box-shadow: var(--shadow-color);
+   text-align: center;
+   transition: .5s ease;
+   border:outset;
+   width: 50%;
+   height: 350px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   margin: 0 auto;
+   background-repeat: no-repeat;
+   background-size: cover;
+   flex-direction: column;
+   border-style: solid;
+   background:linear-gradient(90deg,rgb(2,0,36,1)0%,rgb(9,9,121,1)35%,rgb(7,106,126)100%);
+}
+
+.RESUME .HEADING{
+   width: 50%;
+   margin: 0 auto;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   font-size: xx-large;
+   
+}
+.RESUMECONTENT h1{
+   font-size: larger;
+}
+
+.RESUMECONTENT {
+   
+   width: 60%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
+   align-items: center;
+   font-size: larger;
+}
+
+
+.contact {
+   padding: 20px;
+   text-align: center;
+   justify-content: center;
+}
+
+.contact-form {
+   width: 50%;
+   margin: 0 auto;
+   align-items: center;
+   
+}
+
+.input-box {
+   margin-bottom: 20px;
+   text-align: left;
+   
+}
+
+label {
+   display: flex;
+   margin-bottom: 5px;
+}
+
+input,
+textarea {
+   width: 100%;
+   padding: 10px;
+   box-sizing: border-box;
+   margin-bottom: 2px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.btn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.btn:hover {
+   background-color: #45a049;
+}
